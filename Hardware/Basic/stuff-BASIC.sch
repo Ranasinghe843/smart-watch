@@ -4172,8 +4172,8 @@ http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf&lt;/il&gt;
 <part name="GND1" library="LinnesLab-Symbols" deviceset="GND" device=""/>
 <part name="SW2" library="LinnesLab-Switches" deviceset="SWITCH.MOM" device=""/>
 <part name="GND2" library="LinnesLab-Symbols" deviceset="GND" device=""/>
-<part name="J1" library="LinnesLab-Connectors" deviceset="FTDI_DEVICE" device="SMD"/>
 <part name="GND6" library="LinnesLab-Symbols" deviceset="GND" device=""/>
+<part name="J1" library="LinnesLab-Connectors" deviceset="FTDI_DEVICE" device="SMD"/>
 </parts>
 <sheets>
 <sheet>
@@ -4669,12 +4669,12 @@ Programmer</text>
 <instance part="GND2" gate="G$1" x="213.36" y="-40.64" smashed="yes">
 <attribute name="VALUE" x="213.36" y="-40.894" size="1.778" layer="96" align="top-center"/>
 </instance>
+<instance part="GND6" gate="G$1" x="10.16" y="-76.2" smashed="yes">
+<attribute name="VALUE" x="10.16" y="-76.454" size="1.778" layer="96" align="top-center"/>
+</instance>
 <instance part="J1" gate="G$1" x="2.54" y="-63.5" smashed="yes" rot="MR0">
 <attribute name="NAME" x="2.54" y="-53.34" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="2.54" y="-55.88" size="1.778" layer="96" rot="MR0"/>
-</instance>
-<instance part="GND6" gate="G$1" x="10.16" y="-76.2" smashed="yes">
-<attribute name="VALUE" x="10.16" y="-76.454" size="1.778" layer="96" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -4958,14 +4958,14 @@ Programmer</text>
 <pinref part="GND2" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="GND"/>
 <pinref part="GND6" gate="G$1" pin="GND"/>
 <wire x1="7.62" y1="-71.12" x2="10.16" y2="-71.12" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="-71.12" x2="10.16" y2="-73.66" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="CTS"/>
 <wire x1="7.62" y1="-68.58" x2="10.16" y2="-68.58" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="-71.12" x2="10.16" y2="-68.58" width="0.1524" layer="91"/>
 <junction x="10.16" y="-71.12"/>
+<pinref part="J1" gate="G$1" pin="CTS"/>
+<pinref part="J1" gate="G$1" pin="GND"/>
 </segment>
 </net>
 <net name="SWDIO" class="0">
@@ -5273,9 +5273,9 @@ Programmer</text>
 <label x="55.88" y="83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="DTR"/>
 <wire x1="7.62" y1="-58.42" x2="12.7" y2="-58.42" width="0.1524" layer="91"/>
 <label x="12.7" y="-58.42" size="1.27" layer="95" xref="yes"/>
+<pinref part="J1" gate="G$1" pin="DTR"/>
 </segment>
 </net>
 <net name="P0.10/NFC2" class="0">
@@ -5455,9 +5455,9 @@ Programmer</text>
 <wire x1="30.48" y1="-66.04" x2="25.4" y2="-66.04" width="0.1524" layer="91"/>
 <pinref part="SUPPLY13" gate="G$1" pin="V_USB"/>
 <wire x1="25.4" y1="-63.5" x2="25.4" y2="-66.04" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="VCC"/>
 <wire x1="7.62" y1="-66.04" x2="25.4" y2="-66.04" width="0.1524" layer="91"/>
 <junction x="25.4" y="-66.04"/>
+<pinref part="J1" gate="G$1" pin="VCC"/>
 </segment>
 </net>
 <net name="CHRG.STAT" class="0">
@@ -5543,16 +5543,16 @@ Programmer</text>
 </net>
 <net name="TXD.NRF" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="RXI"/>
 <wire x1="7.62" y1="-60.96" x2="12.7" y2="-60.96" width="0.1524" layer="91"/>
 <label x="12.7" y="-60.96" size="1.27" layer="95" xref="yes"/>
+<pinref part="J1" gate="G$1" pin="RXI"/>
 </segment>
 </net>
 <net name="RXD.NRF" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="TXO"/>
 <wire x1="7.62" y1="-63.5" x2="12.7" y2="-63.5" width="0.1524" layer="91"/>
 <label x="12.7" y="-63.5" size="1.27" layer="95" xref="yes"/>
+<pinref part="J1" gate="G$1" pin="TXO"/>
 </segment>
 </net>
 </nets>
