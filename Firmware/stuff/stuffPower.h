@@ -3,7 +3,7 @@
 
 #include <Arduino.h>
 
-class stuff{
+class stuffPower{
   private:
 
   public:
